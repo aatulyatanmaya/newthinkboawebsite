@@ -1,0 +1,199 @@
+/* Admin Layout */
+.admin-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+.admin-nav {
+    width: 250px;
+    background: #161616;
+    color: #fff;
+    padding: 1rem;
+}
+
+.admin-main {
+    flex: 1;
+    background: #f4f4f4;
+}
+
+/* Admin Navigation */
+.nav-header {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+/* Admin Header */
+.admin-header {
+    background: #fff;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Admin Content */
+.admin-content {
+    padding: 2rem;
+}
+
+/* Login Page */
+.admin-login {
+    background: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.login-wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.login-box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+/* Dashboard Styles */
+.dashboard-overview {
+    padding: 1rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.stat-card i {
+    font-size: 2rem;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    color: #161616;
+}
+
+.stat-link {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+.dashboard-sections {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.recent-posts,
+.recent-applications {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+@media (min-width: 992px) {
+    .dashboard-sections {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* Post Management Styles */
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.post-form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-actions {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+/* Job Applications Styles */
+.filters {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.status-form {
+    margin: 0;
+}
+
+.status-form select {
+    min-width: 120px;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.modal-body {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.table .btn {
+    margin: 0 0.25rem;
+}
